@@ -66,3 +66,28 @@ call minpac#add('janko-m/vim-test')
 
 " === EDITOR CONFIG ===
 call minpac#add('sgur/vim-editorconfig')
+
+" === COMPLETION ===
+call minpac#add('ncm2/ncm2')
+
+" === RUST ===
+call minpac#add('rust-lang/rust.vim')
+
+let g:rustfmt_autosave = 1
+
+" === LSP ===
+call minpac#add('autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ })
+
+let g:LanguageClient_autoStart = 1
+
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['rustup', 'run', 'nightly', 'rls'] }
+
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+noremap <silent> H :call LanguageClient_textDocument_hover()<CR>
+noremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+noremap <silent> R :call LanguageClient_textDocument_rename()<CR>
+noremap <silent> S :call LanugageClient_textDocument_documentSymbol()<CR>
