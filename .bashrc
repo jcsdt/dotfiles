@@ -25,4 +25,4 @@ BROWSER=/usr/bin/chromium
 EDITOR=/usr/bin/nano
 
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin
-alias dotfiles=/usr/bin/git --git-dir=/home/jean/.dotfiles/ --work-tree=/home/jean
+alias dotfiles="/usr/bin/git --git-dir=/home/jean/.dotfiles/ --work-tree=/home/jean"
