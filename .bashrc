@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+[ -z "$TMUX" ] && export TERM=xterm-256color
+
 alias ls='ls --color=auto'
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
 export PS1="\[\u@\h \W\]» "
