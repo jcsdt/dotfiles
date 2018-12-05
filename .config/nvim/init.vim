@@ -87,3 +87,7 @@ call minpac#add('janko-m/vim-test')
 
 " === EDITOR CONFIG ===
 call minpac#add('sgur/vim-editorconfig')
+
+" === TMUX ===
+" Move between vim and tmux splits
+call minpac#add('christoomey/vim-tmux-navigator')
