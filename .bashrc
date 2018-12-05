@@ -9,9 +9,9 @@
 
 alias ls='ls --color=auto'
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
-export PS1="\[\u@\h \W\]» "
+export PS1="\u@\h \W\\» "
 else
-export PS1="\[\u@\h \W\]$ "
+export PS1="\u@\h \W\\$ "
 fi
 
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
