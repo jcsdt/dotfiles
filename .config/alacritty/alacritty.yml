@@ -86,24 +86,24 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-    family: monospace
+    family: consolas
     # The `style` can be specified to pick a specific face.
     #style: Regular
 
   # Bold font face
   bold:
-    family: monospace
+    family: consolas
     # The `style` can be specified to pick a specific face.
     #style: Bold
 
   # Italic font face
   italic:
-    family: monospace
+    family: consolas
     # The `style` can be specified to pick a specific face.
     #style: Italic
 
   # Point size
-  size: 8.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -130,40 +130,33 @@ render_timer: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Base16 3024 - alacritty color config
-# Jan T. Sott (http://github.com/idleberg)
 colors:
   # Default colors
   primary:
-    background: '0x090300'
-    foreground: '0xa5a2a2'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x090300'
-    cursor: '0xa5a2a2'
+    background: '0x151515'
+    foreground: '0xd0d0d0'
 
   # Normal colors
   normal:
-    black:   '0x090300'
-    red:     '0xdb2d20'
-    green:   '0x01a252'
-    yellow:  '0xfded02'
-    blue:    '0x01a0e4'
-    magenta: '0xa16a94'
-    cyan:    '0xb5e4f4'
-    white:   '0xa5a2a2'
+    black:   '0x151515'
+    red:     '0xac4142'
+    green:   '0x90a959'
+    yellow:  '0xf4bf75'
+    blue:    '0x6a9fb5'
+    magenta: '0xaa759f'
+    cyan:    '0x75b5aa'
+    white:   '0xd0d0d0'
 
   # Bright colors
   bright:
-    black:   '0x5c5855'
-    red:     '0xe8bbd0'
-    green:   '0x3a3432'
-    yellow:  '0x4a4543'
-    blue:    '0x807d7c'
-    magenta: '0xd6d5d4'
-    cyan:    '0xcdab53'
-    white:   '0xf7f7f7'
+    black:   '0x505050'
+    red:     '0xac4142'
+    green:   '0x90a959'
+    yellow:  '0xf4bf75'
+    blue:    '0x6a9fb5'
+    magenta: '0xaa759f'
+    cyan:    '0x75b5aa'
+    white:   '0xf5f5f5'
 
   # Indexed Colors
   #
