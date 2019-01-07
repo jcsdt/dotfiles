@@ -23,9 +23,9 @@ fi
 fi
 
 # >>> Added by cnchi installer
-BROWSER=/usr/bin/chromium
-EDITOR=/usr/bin/nvim
-VISUAL=/usr/bin/nvim
+export BROWSER=/usr/bin/chromium
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 
 export PATH=$PATH:$HOME/.local/bin:$HOME/.cargo/bin
 alias dotfiles="/usr/bin/git --git-dir=/home/jean/.dotfiles/ --work-tree=/home/jean"
