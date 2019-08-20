@@ -31,6 +31,7 @@ call minpac#add('radenling/vim-dispatch-neovim')
 
 " === FZF ===
 call minpac#add('junegunn/fzf')
+call minpac#add('junegunn/fzf.vim')
 
 nnoremap <C-p> :<C-u>FZF<CR>
 
@@ -43,11 +44,15 @@ let g:ale_lint_on_text_changed = 'never'
 
 let g:ale_linters = {
 \ 'rust': ['rls', 'cargo'],
+\ 'python': ['flake8'],
+\ 'kotlin': ['kotlinc', 'ktlint'],
 \ }
 
 let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
 \ 'rust': ['rustfmt'],
+\ 'python': ['black'],
+\ 'kotlin': ['ktlint'],
 \ }
 
 " Mappings in the style of unimpaired-next
@@ -94,3 +99,14 @@ call minpac#add('sgur/vim-editorconfig')
 " === TMUX ===
 " Move between vim and tmux splits
 call minpac#add('christoomey/vim-tmux-navigator')
+
+" === cTags ===
+
+call minpac#add('majutsushi/tagbar')
+nmap <F8> :TagbarToggle<CR>
+
+call minpac#add('craigemery/vim-autotag')
+
+" === HIGHLIGHTING ===
+
+call minpac#add('sheerun/vim-polyglot')
