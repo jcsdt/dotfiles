@@ -1,4 +1,5 @@
 
+set -gx SHELL (which fish)
 set -gx PATH $HOME/opt/bin $HOME/opt/kotlinc/bin $PATH
 
 # ABBREVIATIONS
