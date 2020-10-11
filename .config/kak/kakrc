@@ -1,0 +1,14 @@
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+
+plug "andreyorst/fzf.kak"
+plug "ul/kak-lsp" do %{
+    cargo install --locked --force --path .
+}
+
+map global normal <c-p> ': fzf-mode<ret>'
+
+hook global WinSetOption filetype=elixir %{
+    lsp-enable-window
+    lsp-auto-hover-enable
+    hook window BufWritePre .* lsp-formatting-sync
+}
