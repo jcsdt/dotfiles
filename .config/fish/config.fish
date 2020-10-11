@@ -1,6 +1,9 @@
 
 set -gx SHELL (which fish)
-set -gx PATH $HOME/opt/bin $HOME/opt/kotlinc/bin $PATH
+set -gx PATH $HOME/.cargo/bin $HOME/opt/bin $HOME/opt/kotlinc/bin $PATH
+
+# fzf
+set -gx FZF_DEFAULT_COMMAND "rg --files --no-ignore --hidden --follow --glob '!.git/*' --glob '!node_modules/*'"
 
 # ABBREVIATIONS
 
@@ -19,6 +22,7 @@ abbr gcb 'git checkout -b'
 abbr gct 'git checkout'
 
 ## vim
-abbr vim 'nvim'
 
-direnv hook fish | source
+. $HOME/.asdf/asdf.fish
+
+. $HOME/.asdf/completions/asdf.fish
